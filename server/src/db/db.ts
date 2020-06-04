@@ -1,6 +1,6 @@
 import knex from 'knex';
 
-const con = knex({
+const db = knex({
     client: 'postgres',
     connection:{
         host : '127.0.0.1',
@@ -15,4 +15,4 @@ const con = knex({
 })
 
 
-export default knex;
+export default db;
