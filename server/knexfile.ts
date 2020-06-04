@@ -2,7 +2,7 @@ import path from 'path';
 
 module.exports = {
 
-    client: 'pg',
+    client: 'postgres',
     connection:{
         host : '127.0.0.1',
         user : 'postgres',
@@ -13,6 +13,10 @@ module.exports = {
     pool: { min: 0, max: 7 },
     migrations: {
         directory: path.resolve(__dirname, 'src', 'db', 'migrations')
+
+    },
+    seeds: {
+        directory: path.resolve(__dirname, 'src', 'db', 'seeds')
 
     }
 
