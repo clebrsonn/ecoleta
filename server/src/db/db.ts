@@ -1,18 +1,9 @@
 import knex from 'knex';
-
-const db = knex({
-    client: 'postgres',
-    connection:{
-        host : '127.0.0.1',
-        user : 'postgres',
-        password : 'postgres',
-        database : 'ecoleta'
-    
-    },
-    pool: { min: 0, max: 7 }
+import path from 'path';
 
 
-})
+const knexFile = require(path.resolve(',,', '..', 'knexfile'));
 
+const db = knex(knexFile);
 
 export default db;

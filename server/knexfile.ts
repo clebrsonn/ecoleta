@@ -10,7 +10,7 @@ module.exports = {
         database : 'ecoleta'
     
     },
-    pool: { min: 0, max: 7 },
+    pool: { min: 1, max: 7 },
     migrations: {
         directory: path.resolve(__dirname, 'src', 'db', 'migrations')
 
@@ -19,6 +19,4 @@ module.exports = {
         directory: path.resolve(__dirname, 'src', 'db', 'seeds')
 
     }
-
-
 }
