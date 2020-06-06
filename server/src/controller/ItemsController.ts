@@ -14,7 +14,7 @@ class ItemsController {
                 id: item.id,
                 name: item.title,
                 image_name: item.imagem,
-                image_url: `${baseUrl}/images/${item.imagem}`
+                image_url: `http://${baseUrl}/images/${item.imagem}`
             }
 
         })
